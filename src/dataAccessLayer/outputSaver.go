@@ -18,7 +18,7 @@ func (OutputSaverFactoryImpl) GetOutputSaverDal() model.OutputSaverDal {
 
 //SaveOutput saves the result to output.txt in the form of grid
 func (cs outputSaverDalImpl) SaveOutput(resultData *model.BattleShipConfig) error {
-	f, err := os.Create("../playerAoutput.txt")
+	f, err := os.Create("../output.txt")
 	if err != nil {
 		return err
 	}
